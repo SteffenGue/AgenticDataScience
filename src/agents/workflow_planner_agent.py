@@ -10,8 +10,8 @@ from typing import Any, Optional, Sequence, Dict
 from langchain_core.messages import BaseMessage
 from langchain_core.prompts import ChatPromptTemplate
 
-from ai_data_science_team.templates import BaseAgent
-from ai_data_science_team.utils.messages import get_last_user_message_content
+from src.templates import BaseAgent
+from src.utils.messages import get_last_user_message_content
 
 
 AGENT_NAME = "workflow_planner_agent"

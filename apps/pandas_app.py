@@ -17,7 +17,7 @@ import json
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_openai import ChatOpenAI
 
-from ai_data_science_team import (
+from src import (
     PandasDataAnalyst,
     DataWranglingAgent,
     DataVisualizationAgent,

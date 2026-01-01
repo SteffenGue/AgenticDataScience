@@ -160,3 +160,5 @@ def remove_consecutive_duplicates(messages):
         prev_message = msg.content  # Update previous message to current
 
     return unique_messages
+
+

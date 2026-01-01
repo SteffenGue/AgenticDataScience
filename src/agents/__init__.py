@@ -1,1 +1,7 @@
-from src.agents.sql_agent import SQLDatabaseAgent
+from src.agents.data_cleaning_agent import make_data_cleaning_agent, DataCleaningAgent
+from src.agents.feature_engineering_agent import make_feature_engineering_agent, FeatureEngineeringAgent
+from src.agents.data_wrangling_agent import make_data_wrangling_agent, DataWranglingAgent
+from src.agents.sql_database_agent import make_sql_database_agent, SQLDatabaseAgent
+from src.agents.data_visualization_agent import make_data_visualization_agent, DataVisualizationAgent
+from src.agents.data_loader_tools_agent import make_data_loader_tools_agent, DataLoaderToolsAgent
+from src.agents.workflow_planner_agent import WorkflowPlannerAgent
