@@ -310,7 +310,8 @@ def run_code_sandboxed_subprocess(
     try:
         completed = subprocess.run(
             [sys.executable, "-c", SANDBOX_RUNNER_SCRIPT],
-            input=json.dumps(payload).encode("utf-8"),
+            # input=json.dumps(payload).encode("utf-8"),
+            input=json.dumps(payload, indent=4, default=str).encode("utf-8"), # TODO: Check bugfix
             capture_output=True,
             timeout=timeout,
             env=env,
